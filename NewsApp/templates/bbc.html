@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></head>
+<body>
+
+<div class="jumbotron" style="color:black">
+
+    <h1 style="color:blue">
+        THIS IS THE LATEST NEWS
+
+    </h1>
+<p>You can visit some different News Website:</p>
+    <a type="button" class="btn btn-info" href="https://timesofindia.indiatimes.com/">TOI</a>
+    <a type="button" class="btn btn-info" href="https://www.ndtv.com/">NDTV</a>
+    <a type="button" class="btn btn-info" href="https://www.indiatoday.in/">India Today</a>
+    <a type="button" class="btn btn-info" href="https://indianexpress.com/">Indian Express</a>
+    <a type="button" class="btn btn-info" href="https://www.thehindu.com/">The Hindu</a>
+    <a type="button" class="btn btn-info" href="https://www.news18.com/">News18</a>
+    <a type="button" class="btn btn-info" href="https://www.firstpost.com/">Firstpost</a>
+    <a type="button" class="btn btn-info" href="https://www.business-standard.com/">Business Standard</a>
+    <a type="button" class="btn btn-info" href="https://www.dnaindia.com/">DNA</a>
+    <a type="button" class="btn btn-info" href="https://www.oneindia.com/">Oneindia</a>
+    <a type="button" class="btn btn-info" href="https://scroll.in/">Scroll.in</a>
+    <a type="button" class="btn btn-info" href="https://www.financialexpress.com/">The Financial Express</a>
+    <a type="button" class="btn btn-info" href="https://www.thehindubusinessline.com/">Business Line</a>
+
+
+
+
+
+</div>
+
+
+
+<div class="container">
+    {% for new, des, i in mylist %}
+    <img src="{{i}}" alt="">
+    <h3>News:</h3> {{new}}
+    {{value | linebreaks}}
+
+    <h4>Description:</h4> {{des}}
+    {{value | linebreaks}}
+
+
+
+    {% endfor %}
+
+
+
+
+</div>
+
+<style>
+.footer {
+  position: bottom;
+  left: 0;
+  bottom: 50%;
+  width: 100%;
+  background-color: blue;
+  color: black;
+  text-align: center;
+}
+</style>
+
+<div class="footer">
+    <p> © 2020 My Website. All rights reserved | Design by W3layouts.</p>
+    <button onclick="window.location.href='https://www.google.com/search?q=latest+news&rlz=1C1CHBF_enIN855IN855&sxsrf=ALeKk02AH7LWFaRa531XCflSwM_EwY1ATg:1592748169844&source=lnms&tbm=nws&sa=X&ved=2ahUKEwiY64SniZPqAhWHbn0KHZMUCvkQ_AUoAXoECBIQAw&biw=1536&bih=763'">More News</button><br>
+<br>
+<a type="button" class="btn btn-secondary active" href="https://www.facebook.com/">Facebook</a>
+<a type="button" class="btn btn-success"  href="https://twitter.com/">Twitter</a>
+<a type="button" class="btn btn-danger" href="https://login.yahoo.com/">Yahoo</a>
+<a type="button" class="btn btn-warning" href="https://outlook.live.com/owa/">Outlook</a>
+
+
+    <br>
+</div>
+
+</body>
+</html>
